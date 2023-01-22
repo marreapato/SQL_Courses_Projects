@@ -90,6 +90,17 @@ order by 1;
 
 WHERE DEPARTAMENTO = 'Filmes' OR DEPARTAMENTO = 'Roupas'
 
+/*meu*/
+SELECT EMAIL FROM FUNCIONARIOS WHERE SEXO='Feminino' AND (DEPARTAMENTO='Filmes' OR DEPARTAMENTO='Lar');
+SELECT COUNT(*), DEPARTAMENTO FROM FUNCIONARIOS WHERE SEXO='Feminino' AND (DEPARTAMENTO='Lar' OR DEPARTAMENTO='Filmes') GROUP BY DEPARTAMENTO;
+
+
+SELECT COUNT(*) FROM FUNCIONARIOS
+WHERE
+( DEPARTAMENTO = 'Lar' AND SEXO = 'Feminino' )
+OR
+( DEPARTAMENTO = 'Filmes' AND SEXO = 'Feminino' ) GROUP BY DEPARTAMENTO;
+
 --O gestor de marketing pediu a lista das funcionarias (AS) = FEMININO que trabalhem no departamento 
 --de filmes ou no departamento lar. Ele necessita enviar um email para as colaboradoras
 --desses dois setores. OR +  AND *
@@ -113,6 +124,13 @@ OR
 --Traga os funcionarios do sexo masculino
 --ou os funcionarios que trabalhem no setor Jardim
 
+
+SELECT * FROM FUNCIONARIOS WHERE SEXO='Masculino' OR DEPARTAMENTO='Jardim';
+
+SELECT COUNT(*), SEXO, DEPARTAMENTO FROM FUNCIONARIOS WHERE SEXO='Masculino' OR DEPARTAMENTO='Jardim' GROUP BY SEXO, DEPARTAMENTO;
+
+
+-- MY CODE IS UP --
 SELECT * FROM FUNCIONARIOS
 WHERE
 SEXO = 'Masculino' OR
