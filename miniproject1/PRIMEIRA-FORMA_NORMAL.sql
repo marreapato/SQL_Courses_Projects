@@ -65,3 +65,12 @@ SELECT * FROM CLIENTES;
   
  );
  
+ /*FOREIGN E UMA CHAVE PRIMARIA DE UMA TABELA QUE VAI ATE A OUTRAA PARA TRAZER REGISTROS*/
+ 
+ /* EM RELACIONAMENTOS 1X1 A CHAVE ESTRANGEIRA FICA NA TABELA
+ MAIS FRACA */
+ 
+ /* em relacionamentos 1xn a chave estrangeira ficara sempre na
+ cardinalidade n*/
+ 
+ 
