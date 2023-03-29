@@ -1,0 +1,12 @@
+-- SEU ZE
+
+SHOW DATABASES;
+
+DROP DATABASE PROJETO;
+
+create database projeto;
+
+USE PROJETO;
+
+-- SISTEMA DO SEU ZE
+
